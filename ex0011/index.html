@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin: 10px;
+        }
+        input{
+            margin-top: 5px;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .conteiner{
+            height: 85vh;
+            width: 85vw;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h2>Simulador de Idades</h2>
+        Digite sua idade:
+        <input type="number" id="idade">
+        <input type="button" value="Testar" onclick="clicar()">
+        <div id="res"></div>
+    </div>
+    <script>
+        var a = document.querySelector('.conteiner')
+        function clicar(){
+            var pegIdade = document.getElementById('idade')
+            var pegRes = document.getElementById('res')
+            var idadeInt = Number(pegIdade.value)
+            a.style.backgroundColor = ''
+            a.style.color = ''
+            if (idadeInt < 18 ){
+                pegRes.innerHTML = 'Você é de menor'  
+                a.style.backgroundColor = 'red'
+                a.style.color = 'white'
+                a.style.transition = '0.5s'
+            }else if (idadeInt >= 18 && idadeInt < 60){
+                pegRes.innerHTML = 'Você é aduldo'
+                a.style.backgroundColor = 'green'
+                a.style.color = 'white'
+                a.style.transition = '0.5s'
+            }else{
+                pegRes.innerHTML = 'Você é idoso'
+                a.style.backgroundColor = 'blue'
+                a.style.color = 'white'
+                a.style.transition = '0.5s'
+            }
+        }
+    </script>
+</body>
+</html>

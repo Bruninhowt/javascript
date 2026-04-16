@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h2>Par ou Impar</h2>
+    Digite um numero de 0 a 10
+    <input type="number" id="numero">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar(){
+            var pegNume = document.getElementById('numero')
+            var pegRes = document.getElementById('res')
+            var numero = Number(pegNume.value)
+            if (numero % 2 == 0){
+                pegRes.innerHTML = 'È par'
+            }else {
+                pegRes.innerHTML = 'É impar'
+            }
+        }
+    </script>
+</body>
+</html>
