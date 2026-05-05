@@ -35,6 +35,7 @@ function clicar(){
                 img.setAttribute('src', 'imagens/mulher-60-anos.jpg')
             }
         }
+        
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
         res.appendChild(img) 
         
