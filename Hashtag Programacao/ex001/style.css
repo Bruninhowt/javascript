@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: darkgray;
+    margin: 20px;
+    color: white;
+}
+
+button{
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+.conteiner{
+    display: flex;
+    background-color: aliceblue;
+
+    width: 90vw;
+    margin: auto;
+    border-radius: 8px;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(3, 63, 3), rgb(0, 7, 0));
+}
+
+#titulo{
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+}
+
+section{
+    margin: auto;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 5px solid white;
+}
+
+.informacao {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+
+#nome-musica{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.heart a{
+    color: white;
+    font-size: 1.2em;
+}
+
+.barra-progresso{
+    background-color: rgba(169, 169, 169, 0.527);
+    height: 3px;
+    border-radius: 15px;
+}
+
+.progresso{
+    background-color: white;
+    width: 50%;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.botoes{
+    display: flex;
+    margin: 15px 0px;
+    font-size: 1.7em;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoes a{
+    color: white;
+}
+
+.fa-circle-play{
+    font-size: 2em;
+}
+
+.barra-inf{
+    display: flex;
+
+    justify-content: space-between;
+}

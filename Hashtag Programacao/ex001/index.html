@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script src="https://kit.fontawesome.com/77d21b60b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <div class="conteiner">
+        <section>
+            <h3 id="titulo">Projeto Interface Spotfy</h3>
+            <div class="imagem">
+                <img src="imagens/pexels-cottonbro-4709822.jpg" alt="musica">
+            </div>
+
+            <div class="informacao">
+                <div class="texto-musica">
+                    <p id="nome-musica">Deixa Acontecer</p>
+                    <p id="nome-banda">Pericles</p>
+                </div>
+
+                <div class="heart">
+                    <button><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </div>
+
+            <audio id="audio" src="audio/dxa-deixa-acontecer.mp3"></audio>
+                
+            <div class="barra">
+                <div class="barra-progresso">
+                    <div class="progresso"></div>
+                </div>
+                <div class="barra-inf">
+                    <div class="inicio">00:00</div>
+                    <div class="fim">00:00</div>
+                </div>
+            </div>
+
+            <div class="botoes">
+                <button id="embaralhar"><i class="fa-solid fa-shuffle"></i></button> 
+                <button id="anterior"><i class="fa-solid fa-backward"></i></button> 
+                <button id="play" onclick="play()"><i class="fa-solid fa-circle-play"></i></button> 
+                <button id="next"><i class="fa-solid fa-forward"></i></button> 
+                <button id="repetir"><i class="fa-solid fa-repeat"></i></button> 
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
