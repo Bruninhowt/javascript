@@ -1,17 +1,17 @@
-let imagem = document.querySelector('.imagem');
+let conteiner = document.getElementsByClassName('conteiner');
+let titulo = document.getElementById('titulo');
 let nome_musica = document.getElementById('nome-musica');
 let nome_banda = document.getElementById('nome-banda');
-let heart = document.querySelector('.heart');
-let progresso = document.querySelector('.progresso');
-let inicio = document.querySelector('.inicio');
-let fim = document.querySelector('.fim');
-let embaralhar = document.querySelector('#embaralhar');
-let anterior = document.querySelector('#anterior');
-let play = document.querySelector('#play');
-let next = document.querySelector('#next');
-let repetir = document.querySelector('#repetir');
-let audio = document.getElementById('audio')
+let emoj_heart = document.getElementsByClassName('heart');
+let song = document.getElementById('audio');
+let progresso = document.getElementsByClassName('progresso');
+let inicio = document.getElementsByClassName('inicio');
+let fim = document.getElementsByClassName('fim');
+let btnPlay = document.getElementById('play');
 
-function play(){
-    
+function songplay(){
+    btnPlayplay.querySelector('.fa-solid').classList.remove('fa-circle-play');
+    btnPlayplay.querySelector('.fa-solid').classList.add('fa-circle-pause');
+    song.play();
 }
+play.addEventListener('click', songplay);
